@@ -2,52 +2,59 @@
 {% load static %}
 
 {% block content %}
-<div class="main-container">
-    <div class="main-header">
-        <h1 class="header_title">Light Controller</h1>
-        <img src="{% static 'img/logo.png' %}" />
+    {% if True %}
+    <div class="main-container">
+        <div class="main-header">
+            <div id="isconnected">
+                <img src="{% static 'img/logo.png' %}" />
+            </div>
+            <h1 class="header_title">Seahorse Lights</h1>
+        </div>
+        <div id="system-status">Connecting ...</div>
+        <div class="dashboard">
+            <div class="light">
+                <h3>Flybridge Low</h3>
+                <div id='flybridge_status'>
+                    <img src="{% static 'img/light_bulb.png' %}" />
+                </div>
+                <button id="flybridge_on" type="button" class="btn btn-success">ON</button>
+                <button id="flybridge_off" type="button" class="btn btn-danger">OFF</button>
+            </div>
+            <div class="light">
+                <h3>Hoop Lights</h3>
+                <div id="courtesy_status">
+                    <img src="{% static 'img/light_bulb.png' %}" />
+                </div>
+                <button id="courtesy_on" type="button" class="btn btn-success">ON</button>
+                <button id="courtesy_off" type="button" class="btn btn-danger">OFF</button>
+            </div>
+            <div class="light">
+                <h3>Stairs Lights</h3>
+                <div id='ladder_status'>
+                    <img src="{% static 'img/light_bulb.png' %}" />
+                </div>
+                <button id="ladder_on" type="button" class="btn btn-success">ON</button>
+                <button id="ladder_off" type="button" class="btn btn-danger">OFF</button>
+            </div>
+            <div class="light">
+                <h3>Anchor Area</h3>
+                <div id='anchor_area_status'>
+                    <img src="{% static 'img/light_bulb.png' %}" />
+                </div>
+                <button id="anchor_area_on" type="button" class="btn btn-success">ON</button>
+                <button id="anchor_area_off" type="button" class="btn btn-danger">OFF</button>
+            </div>
+            <div class="light">
+                <h3 id="all-lights-title">ALL Lights</h3>
+                <div id='all_lights'>
+                    
+                </div>
+                <button id="all_on" type="button" class="btn btn-success">ON</button>
+                <button id="all_off" type="button" class="btn btn-danger">OFF</button>
+            </div>
+        </div>
     </div>
-    <div class="dashboard">
-        <div class="light">
-            <h3>Flybridge Low</h3>
-            <div id='flybridge_status'>
-                <img src="{% static 'img/light_bulb.png' %}" />
-            </div>
-            <button id="flybridge_on" type="button" class="btn btn-primary">ON</button>
-            <button id="flybridge_off" type="button" class="btn btn-danger">OFF</button>
-        </div>
-        <div class="light">
-            <h3>Hoop Lights</h3>
-            <div id="courtesy_status">
-                <img src="{% static 'img/light_bulb.png' %}" />
-            </div>
-            <button id="courtesy_on" type="button" class="btn btn-primary">ON</button>
-            <button id="courtesy_off" type="button" class="btn btn-danger">OFF</button>
-        </div>
-        <div class="light">
-            <h3>Stairs Lights</h3>
-            <div id='ladder_status'>
-                <img src="{% static 'img/light_bulb.png' %}" />
-            </div>
-            <button id="ladder_on" type="button" class="btn btn-primary">ON</button>
-            <button id="ladder_off" type="button" class="btn btn-danger">OFF</button>
-        </div>
-        <div class="light">
-            <h3>Anchor Area</h3>
-            <div id='anchor_area_status'>
-                <img src="{% static 'img/light_bulb.png' %}" />
-            </div>
-            <button id="anchor_area_on" type="button" class="btn btn-primary">ON</button>
-            <button id="anchor_area_off" type="button" class="btn btn-danger">OFF</button>
-        </div>
-        <div class="light">
-            <h3>ALL Lights</h3>
-            <div id='all_lights'>
-                <img src="{% static 'img/light_bulb.png' %}" />
-            </div>
-            <button id="all_on" type="button" class="btn btn-primary">ON</button>
-            <button id="all_off" type="button" class="btn btn-danger">OFF</button>
-        </div>
-    </div>
-</div>
-{% endblock %}
+    {% else %}
+    jj
+    {% endif %}
+{% endblock content %}

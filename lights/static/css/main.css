@@ -1,14 +1,27 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: rgb(28, 7, 48);
+    background-color: rgb(4, 3, 49);
     color: white;
     font-family: 'Chakra Petch', sans-serif;
+    text-align: center;
 }
 
 .main-header {
     
     display: flex;
+    align-items: center;
+}
+
+#isconnected {
+    width: 45px;
+    height: 45px;
+    background-color: rgb(214, 214, 200);
+    border-radius: 50%;
+    margin-left: 5%;
+
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -32,11 +45,25 @@ body {
     margin: 20px;
 }
 
+.main-header {
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding: 0px 10px 0 10px;
+    background-color: rgb(7, 32, 43);
+    border-radius: 10px;
+}
+
+h3 {
+    width: 90%;
+}
+
 .light {
     margin: 16px;
     background-color: rgb(16, 8, 24);
-    box-shadow: 3px 3px 3px rgb(63, 46, 63);
+    box-shadow: 1px 1px 1px 1px rgb(14, 78, 80);
     padding: 28px;
+    border-radius: 20px;
 
     display: flex;
     justify-content: space-between;
@@ -49,10 +76,13 @@ body {
     border-radius: 50%;
     margin: 5px;
     padding: 2px;
+
+    box-shadow: 1px 1px 1pxrgb(4, 75, 7);
 }
 
 img {
     width: 40px;
+    margin:auto;
 }
 
 button {
